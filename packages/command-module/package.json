@@ -1,9 +1,9 @@
 {
-  "name": "@lunar-lander/apollo",
+  "name": "@lunar-flight/command-module",
   "version": "0.0.0",
   "author": "Marcin Mazurowski @ _KTW-STUDIO <hello@ktwstudio.com>",
   "description": "@lunar-lander/apollo is monorepo for ...",
-  "homepage": "https://github.com/ktw-studio/lunar-flight#readme",
+  "homepage": "",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

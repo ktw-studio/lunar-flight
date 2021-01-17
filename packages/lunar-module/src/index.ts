@@ -1,4 +1,4 @@
-import { AppError } from "@lunar-lander/apollo";
+import { AppError } from "@lunar-flight/command-module";
 
 const err = new AppError("asd");
 
