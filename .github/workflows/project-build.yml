@@ -20,5 +20,5 @@ jobs:
       - name: project build
         run: |
           npm install
-          npm start
-          npm build
+          npm run bootstrap
+          npm run build

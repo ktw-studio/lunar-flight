@@ -7,7 +7,9 @@
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "start": "npm install",
     "test": "echo \"Error: run tests from root\" && exit 1"

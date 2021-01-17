@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "start": "lerna run start",
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test"
   }

@@ -7,7 +7,9 @@
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "start": "npm install",
     "dev": "NODE_ENV=development nodemon --watch \"src/**/*.ts\" --exec \"ts-node -r tsconfig-paths/register\" ./src/index.ts",

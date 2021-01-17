@@ -1,1 +1,5 @@
-console.log("hello world");
+import { AppError } from "@lunar-lander/apollo";
+
+const err = new AppError("asd");
+
+console.log(err.getHey());
