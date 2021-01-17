@@ -1,0 +1,12 @@
+# IDE and system
+.idea
+.DS_Store
+
+# File extensions
+*.log
+
+# Directories
+node_modules
+lib
+dist
+.cache
