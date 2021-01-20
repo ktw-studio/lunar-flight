@@ -1,1 +1,2 @@
-console.log("express");
+// @eslint-ignore
+console.log('express');

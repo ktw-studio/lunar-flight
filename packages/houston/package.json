@@ -17,6 +17,7 @@
     "test": "NODE_ENV=test jest --config ./jest.config.js",
     "test:watch": "NODE_ENV=test jest --config ./jest.config.js --watch",
     "lint": "eslint --ignore-path ../../.eslintignore --ext .ts \"src/**/*\"",
+    "lint:fix": "eslint --fix",
     "format": "prettier --config ./../../.prettierrc --write \"src/**/*\"",
     "typecheck": "tsc --noEmit"
   },

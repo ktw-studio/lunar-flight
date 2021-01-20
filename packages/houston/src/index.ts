@@ -1,1 +1,2 @@
-console.log("houston");
+// @eslint-ignore
+console.log('houston');
