@@ -1,4 +1,6 @@
 ![Production Build](https://github.com/ktw-studio/lunar-flight/workflows/Project%20Build/badge.svg)
+![Test](https://github.com/ktw-studio/lunar-flight/workflows/Test/badge.svg)
+![Lint Check](https://github.com/ktw-studio/lunar-flight/workflows/Lint%20Check/badge.svg)
 
 # Lunar flight - Toolkit
 
@@ -12,6 +14,8 @@ but it's supposed to help you reduce boilerplate code from your repository.
 3. Instruments – Tools and utils
 4. Houston - Errors and exceptions
 5. Express - Express specific set of useful tools  
+6. Lunar - CLI for scaffolding projects
+7. Landing gear - React Toolkit
 
 ### Installation:
 Install any of the following packages:
@@ -21,6 +25,8 @@ npm run install @lunar-flight/lunar-module
 npm run install @lunar-flight/houston
 npm run install @lunar-flight/instruments
 npm run install @lunar-flight/express
+npm run install @lunar-flight/lunar
+npm run install @lunar-flight/landing-gear
 ```
 
 ### Usage:
