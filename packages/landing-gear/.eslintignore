@@ -1,7 +1,0 @@
-*.less
-*.stories.tsx
-*.svg
-*.json
-*.css
-*.mdx
-src/process-env.d.ts

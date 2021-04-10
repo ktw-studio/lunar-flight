@@ -12,19 +12,14 @@ but it's supposed to help you reduce boilerplate code from your repository.
 1. Command Module – CQRS module
 2. Lunar Module – DDD building blocks
 3. Instruments – Tools and utils
-4. Lunar - CLI for scaffolding projects
-5. Landing gear - React Toolkit
+
 
 ### Installation:
 Install any of the following packages:
 ```
 npm run install @lunar-flight/command-module
 npm run install @lunar-flight/lunar-module
-npm run install @lunar-flight/houston
 npm run install @lunar-flight/instruments
-npm run install @lunar-flight/express
-npm run install @lunar-flight/lunar
-npm run install @lunar-flight/landing-gear
 ```
 
 ### Usage:
