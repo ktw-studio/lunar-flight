@@ -12,10 +12,8 @@ but it's supposed to help you reduce boilerplate code from your repository.
 1. Command Module – CQRS module
 2. Lunar Module – DDD building blocks
 3. Instruments – Tools and utils
-4. Houston - Errors and exceptions
-5. Express - Express specific set of useful tools  
-6. Lunar - CLI for scaffolding projects
-7. Landing gear - React Toolkit
+4. Lunar - CLI for scaffolding projects
+5. Landing gear - React Toolkit
 
 ### Installation:
 Install any of the following packages:
