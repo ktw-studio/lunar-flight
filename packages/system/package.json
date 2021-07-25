@@ -1,5 +1,5 @@
 {
-  "name": "@lunar-flight/system",
+  "name": "@lunar-flight-v/system",
   "version": "0.0.0",
   "author": "Marcin Mazurowski @ _KTW-STUDIO <hello@ktwstudio.com>",
   "description": "",
@@ -40,7 +40,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "@lunar-flight/command-module": "^0.0.0",
+    "@lunar-flight-v/command-module": "^0.0.0",
     "reflect-metadata": "^0.1.13"
   }
 }

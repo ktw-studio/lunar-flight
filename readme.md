@@ -4,22 +4,20 @@
 
 # Lunar flight - Toolkit
 
-Lunar Flight is a lightweight, CQRS and DDD toolkit.
+Lunar Flight is a lightweight toolkit.
 It's not supposed to be tell you how to do things, 
 but it's supposed to help you reduce boilerplate code from your repository.
 
 ## Packages:
 1. Command Module – CQRS module
-2. Lunar Module – DDD building blocks
-3. Instruments – Tools and utils
+2. System – Tools and utils
 
 
 ### Installation:
 Install any of the following packages:
 ```
-npm run install @lunar-flight/command-module
-npm run install @lunar-flight/lunar-module
-npm run install @lunar-flight/instruments
+npm run install @lunar-flight-v/command-module
+npm run install @lunar-flight-v/system
 ```
 
 ### Usage:
