@@ -1,6 +1,6 @@
 {
   "name": "@lunar-flight-v/command-module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Marcin Mazurowski @ _KTW-STUDIO <hello@ktwstudio.com>",
   "description": "@lunar-lander/apollo is monorepo for ...",
   "homepage": "",
@@ -45,5 +45,6 @@
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.0.5"
-  }
+  },
+  "gitHead": "d6104e5075fc50c43725cc78afbd39bdff814128"
 }
