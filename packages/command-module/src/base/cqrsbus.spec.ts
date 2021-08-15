@@ -11,10 +11,8 @@ class ConcreteQuery extends Query<ConcreteQueryPayload> {
   key=CONCRETE_QUERY_KEY;
 }
 
-class ConcreteQueryHandler extends QueryHandler<ConcreteQuery> {
-  constructor() {
-    super(CONCRETE_QUERY_KEY);
-  }
+class ConcreteQueryHandler extends QueryHandler<{}, ConcreteQuery> {
+  key=CONCRETE_QUERY_KEY;
 
   async handle(handleable: ConcreteQuery): Promise<unknown> {
     return Promise.resolve(handleable);
@@ -24,9 +22,9 @@ class ConcreteQueryHandler extends QueryHandler<ConcreteQuery> {
 describe('CQRS bus', () => {
   test('should throw an error when handler is already registered', async (done) => {
     const bus = new CQRSBus();
-    bus.registerHandler(new ConcreteQueryHandler());
+    bus.registerHandler(new ConcreteQueryHandler({}));
 
-    expect(() => bus.registerHandler(new ConcreteQueryHandler())).toThrowError('Cannot register multiple handlers for key: "concrete-query"');
+    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).toThrowError('Cannot register multiple handlers for key: "concrete-query"');
 
     done();
   });
@@ -34,9 +32,9 @@ describe('CQRS bus', () => {
   test('should allow register multiple handlers if options provided', async (done) => {
     const bus = new CQRSBus({ forbidMultipleHandlers: false });
 
-    bus.registerHandler(new ConcreteQueryHandler());
+    bus.registerHandler(new ConcreteQueryHandler({}));
 
-    expect(() => bus.registerHandler(new ConcreteQueryHandler())).not.toThrowError();
+    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).not.toThrowError();
 
     done();
   });
@@ -52,7 +50,7 @@ describe('CQRS bus', () => {
   test('should handle ConcreteQuery', async (done) => {
     const bus = new CQRSBus();
 
-    bus.registerHandler(new ConcreteQueryHandler());
+    bus.registerHandler(new ConcreteQueryHandler({}));
 
     const result = await bus.handle(new ConcreteQuery({ name: 'concrete-query-payload-name' }));
 

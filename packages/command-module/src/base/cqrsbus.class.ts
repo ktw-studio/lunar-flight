@@ -12,9 +12,9 @@ export class CQRSBus {
     this.registeredHandlers = [];
   }
 
-  private registeredHandlers: Handler<unknown>[];
+  private registeredHandlers: Handler<unknown, unknown>[];
 
-  public registerHandler(handler: Handler<unknown>) {
+  public registerHandler(handler: Handler<unknown, unknown>) {
     const isAlreadyRegistered = this.isAlreadyRegistered(handler);
 
     if (this.options.forbidMultipleHandlers && isAlreadyRegistered) {
@@ -34,7 +34,7 @@ export class CQRSBus {
     return handler.handle(handleable);
   }
 
-  private isAlreadyRegistered(handler: Handler<unknown>) {
+  private isAlreadyRegistered(handler: Handler<unknown, unknown>) {
     return this.registeredHandlers.some((element) => element.getKey() === handler.getKey());
   }
 

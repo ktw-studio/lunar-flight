@@ -1,7 +1,7 @@
 export abstract class Handler<T, K> {
   protected abstract readonly key:string;
 
-  protected constructor(protected readonly dependencies:T) {
+  constructor(protected readonly dependencies:T) {
   }
 
   abstract handle(handleable:K):Promise<unknown>;
