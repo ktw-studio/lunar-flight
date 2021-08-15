@@ -1,5 +1,5 @@
 export abstract class Handleable<T> {
-  protected abstract readonly key:string;
+  public abstract readonly key:string;
 
   constructor(public readonly payload:T) {
   }
