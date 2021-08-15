@@ -8,9 +8,7 @@ const CONCRETE_QUERY_KEY = 'concrete-query';
 interface ConcreteQueryPayload { name: string; }
 
 class ConcreteQuery extends Query<ConcreteQueryPayload> {
-  constructor(payload: ConcreteQueryPayload) {
-    super(CONCRETE_QUERY_KEY, payload);
-  }
+  key=CONCRETE_QUERY_KEY;
 }
 
 class ConcreteQueryHandler extends QueryHandler<ConcreteQuery> {
