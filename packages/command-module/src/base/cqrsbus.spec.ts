@@ -24,7 +24,7 @@ describe('CQRS bus', () => {
     const bus = new CQRSBus();
     bus.registerHandler(new ConcreteQueryHandler({}));
 
-    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).toThrowError('Cannot register multiple handlers for key: "concrete-query"');
+    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).toThrowError('Cannot register multiple handlers for key: "concrete-query-key"');
 
     done();
   });
