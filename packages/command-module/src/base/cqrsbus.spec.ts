@@ -3,7 +3,7 @@ import { CQRSBus } from './cqrsbus.class';
 import { Query } from '../query/query';
 import { QueryHandler } from '../query/query-handler';
 
-const CONCRETE_QUERY_KEY = 'concrete-query-key';
+const CONCRETE_QUERY_KEY = 'concrete-query';
 
 interface ConcreteQueryPayload { name: string; }
 
@@ -24,7 +24,7 @@ describe('CQRS bus', () => {
     const bus = new CQRSBus();
     bus.registerHandler(new ConcreteQueryHandler({}));
 
-    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).toThrowError('Cannot register multiple handlers for key: "concrete-query-key"');
+    expect(() => bus.registerHandler(new ConcreteQueryHandler({}))).toThrowError('Cannot register multiple handlers for key: "concrete-query"');
 
     done();
   });
