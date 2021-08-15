@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Marcin Mazurowski @ _KTW-STUDIO <hello@ktwstudio.com>",
   "description": "",
   "homepage": "",
@@ -43,7 +43,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "@lunar-flight-v/command-module": "^0.1.7",
+    "@lunar-flight-v/command-module": "^0.1.8",
     "reflect-metadata": "^0.1.13"
   },
   "gitHead": "73e54342c9be7912f8677527a1d443970af6aa97"
