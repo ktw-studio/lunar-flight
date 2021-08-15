@@ -3,7 +3,7 @@ import { CQRSBus } from './cqrsbus.class';
 import { Query } from '../query/query';
 import { QueryHandler } from '../query/query-handler';
 
-const CONCRETE_QUERY_KEY = 'concrete-query-key';
+const CONCRETE_QUERY_KEY = 'concrete-query';
 
 interface ConcreteQueryPayload { name: string; }
 
